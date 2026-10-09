@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="DEX STUDIOS — criação de landing pages para clínicas, profissionais, restaurantes e empresas.">
+  <title>DEX STUDIOS — Landing pages que geram oportunidades</title>
+  <style>
+    :root{--bg:#080b12;--panel:#101622;--panel2:#141c2b;--ink:#f3f7ff;--muted:#a0aec3;--line:rgba(184,205,241,.14);--blue:#38a6ff;--cyan:#57e0ed;--lime:#baff66;--max:1160px;--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{color:inherit}::selection{background:var(--blue);color:#06101b}
+    .wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}.eyebrow{color:var(--cyan);font-size:.73rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:24px;height:1px;background:currentColor}.section{padding:106px 0}.section-head{max-width:720px;margin-bottom:42px}.section-head h2{font-size:clamp(2.1rem,5vw,4rem);line-height:1.04;letter-spacing:-.055em;margin:17px 0}.section-head p,.muted{color:var(--muted)}.blue{color:var(--blue)}
+    .topbar{height:76px;position:sticky;top:0;z-index:20;background:rgba(8,11,18,.83);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:1.02rem;font-weight:900;letter-spacing:.12em;display:flex;align-items:center;gap:11px}.brand-mark{height:31px;width:31px;border:1px solid rgba(56,166,255,.6);border-radius:10px;display:grid;place-items:center;color:var(--cyan);box-shadow:inset 0 0 18px rgba(56,166,255,.15)}.brand-mark svg{width:19px}.nav-links{display:flex;gap:27px;align-items:center;color:#c1cad9;font-size:.86rem}.nav-links a:hover{color:var(--cyan)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;background:var(--blue);color:#04101e;padding:13px 20px;font-weight:850;font-size:.9rem;transition:.2s;cursor:pointer}.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:#6bbcff;box-shadow:0 10px 34px rgba(56,166,255,.2)}.btn.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.secondary:hover{border-color:var(--blue);color:var(--cyan);box-shadow:none}.menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:12px;padding:9px}
+    .hero{min-height:680px;position:relative;overflow:hidden;display:flex;align-items:center;padding:72px 0 84px;background:radial-gradient(ellipse at 77% 40%,rgba(13,91,170,.2),transparent 39%),linear-gradient(145deg,#080b12 15%,#0b111c 66%,#08101b)}.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(138,190,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(138,190,255,.045) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(90deg,transparent 20%,#000 100%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:0;position:relative;z-index:1}.hero-copy{max-width:630px}.hero h1{font-size:clamp(3.2rem,7vw,6.2rem);line-height:.96;letter-spacing:-.075em;margin:21px 0 24px}.hero h1 span{display:block;color:var(--cyan)}.hero-copy>p{font-size:1.08rem;color:#b0bdcf;max-width:570px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:31px 0 38px}.region{display:flex;align-items:center;gap:9px;color:#c2cede;font-size:.83rem}.region i{display:block;width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 14px var(--lime)}.hero-art{position:relative;min-height:450px;display:grid;place-items:center;margin-left:-22px}.orb{position:absolute;width:min(460px,90%);aspect-ratio:1;border-radius:50%;border:1px solid rgba(59,163,255,.18);background:radial-gradient(circle,rgba(26,127,225,.16),rgba(19,55,93,.06) 47%,transparent 68%);box-shadow:0 0 95px rgba(17,126,235,.09),inset 0 0 62px rgba(44,138,231,.07)}.orb:before,.orb:after{content:"";position:absolute;inset:11%;border:1px dashed rgba(90,183,255,.19);border-radius:50%;transform:rotateX(68deg) rotateZ(-22deg)}.orb:after{inset:20%;transform:rotateX(72deg) rotateZ(37deg)}.drone-svg{width:min(570px,108%);position:relative;z-index:2;filter:drop-shadow(0 25px 25px rgba(0,0,0,.6))}.float-tag{position:absolute;z-index:3;border:1px solid rgba(130,194,255,.24);background:rgba(9,18,30,.84);backdrop-filter:blur(12px);border-radius:14px;padding:10px 14px;font-size:.74rem;color:#d8eaff;box-shadow:0 12px 36px rgba(0,0,0,.28)}.float-tag strong{display:block;color:var(--cyan);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}.tag-one{top:14%;right:1%}.tag-two{bottom:15%;left:3%}.hero-note{position:absolute;right:4%;bottom:3%;font-size:.67rem;color:#607087;letter-spacing:.12em;text-transform:uppercase}
+    .proof{border-block:1px solid var(--line);background:#0b1019}.proof-row{display:grid;grid-template-columns:1fr repeat(3,1fr);align-items:center;gap:22px;padding:25px 0}.proof-label{color:#8190a5;font-size:.72rem;font-weight:800;letter-spacing:.13em}.proof-item{border-left:1px solid var(--line);padding-left:25px;color:#a9b7ca;font-size:.82rem}.proof-item b{display:block;color:var(--ink);font-size:1rem;margin-bottom:2px}
+    .problem-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:58px}.problem-intro h2{font-size:clamp(2.2rem,4.2vw,3.8rem);line-height:1.03;letter-spacing:-.06em;margin:17px 0}.problem-intro p{color:var(--muted)}.pain-list{display:grid;grid-template-columns:1fr 1fr;gap:11px}.pain{border:1px solid var(--line);background:linear-gradient(135deg,rgba(18,27,41,.86),rgba(11,16,25,.75));border-radius:15px;padding:17px;display:flex;gap:12px;align-items:flex-start;color:#d2dbea;font-size:.87rem}.pain span{font-size:.66rem;color:var(--cyan);font-weight:900;letter-spacing:.08em;padding-top:3px}.inline-cta{display:inline-flex;margin-top:24px;color:var(--cyan);font-weight:800;gap:10px;align-items:center}
+    .method{background:#0b1019;border-block:1px solid var(--line)}.method-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{border:1px solid var(--line);background:linear-gradient(160deg,#131c2a,#0c111a);padding:22px 18px;border-radius:18px;min-height:206px;position:relative;overflow:hidden}.step:after{content:"";position:absolute;right:-30px;bottom:-40px;width:100px;height:100px;border-radius:50%;background:rgba(37,145,239,.09);filter:blur(5px)}.step-num{font-size:.76rem;color:var(--cyan);font-weight:900;letter-spacing:.1em}.step h3{font-size:1.02rem;margin:27px 0 9px}.step p{color:var(--muted);font-size:.8rem;margin:0}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.service{border:1px solid var(--line);border-radius:19px;background:var(--panel);padding:22px;min-height:219px;transition:.22s}.service:hover{transform:translateY(-4px);border-color:rgba(56,166,255,.55);background:#111b2a}.service-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(56,166,255,.28);color:var(--cyan);border-radius:13px;background:rgba(56,166,255,.08);font-size:1.1rem}.service h3{margin:19px 0 7px;font-size:1rem}.service p{color:var(--muted);font-size:.82rem;margin:0 0 14px}.service a{font-size:.78rem;color:var(--cyan);font-weight:800}
+    .portfolio{background:linear-gradient(180deg,#0b1019,#080b12)}.portfolio-head{display:flex;justify-content:space-between;align-items:end;gap:25px}.portfolio-track{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(245px,1fr);grid-auto-columns:calc((100% - 36px)/3);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:3px 2px 18px;scrollbar-width:thin;scrollbar-color:#24486c transparent}.work-card{scroll-snap-align:start;border:1px solid var(--line);background:#0f1622;border-radius:20px;overflow:hidden;min-width:0}.work-visual{height:260px;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 55% 40%,rgba(47,159,255,.34),transparent 31%),linear-gradient(145deg,#182a3d,#10151f 65%)}.work-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 25%,rgba(56,166,255,.08) 25.4%,transparent 26%),linear-gradient(35deg,transparent 54%,rgba(91,218,237,.07) 54.5%,transparent 55%)}.visual-orb{width:140px;height:140px;border-radius:50%;border:1px solid rgba(107,199,255,.48);display:grid;place-items:center;color:var(--cyan);font-size:2.5rem;box-shadow:0 0 65px rgba(30,138,230,.2),inset 0 0 35px rgba(32,130,227,.2)}.visual-type{position:absolute;left:16px;top:15px;font-size:.65rem;font-weight:900;letter-spacing:.15em;color:#a9d9ff;text-transform:uppercase}.work-overlay{position:absolute;inset:auto 0 0;padding:40px 17px 14px;background:linear-gradient(transparent,rgba(4,8,13,.84));color:#fff;font-size:.78rem}.work-info{padding:17px 18px 19px}.work-info h3{font-size:1rem;margin:0 0 3px}.work-info p{font-size:.8rem;color:var(--muted);margin:0}.demo-label{display:inline-block;margin-top:12px;color:#7d91aa;font-size:.66rem;text-transform:uppercase;letter-spacing:.08em}.slider-controls{display:flex;gap:8px}.round-btn{width:43px;height:43px;border-radius:50%;background:transparent;border:1px solid var(--line);font-size:1.1rem;cursor:pointer}.round-btn:hover{border-color:var(--cyan);color:var(--cyan)}
+    .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.case{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:22px}.case-kicker{color:var(--cyan);font-size:.68rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.case h3{margin:13px 0 8px}.case p{color:var(--muted);font-size:.84rem;margin:0}.case .placeholder{margin-top:20px;padding-top:13px;border-top:1px solid var(--line);color:#71839b;font-size:.71rem}
+    .plans{background:#0b1019;border-block:1px solid var(--line)}.plans-intro{text-align:center;max-width:700px;margin:0 auto 40px}.plans-intro .eyebrow{justify-content:center}.plans-intro h2{font-size:clamp(2.2rem,5vw,3.7rem);line-height:1.02;letter-spacing:-.06em;margin:16px 0}.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;align-items:stretch}.plan{border:1px solid var(--line);border-radius:20px;background:#101722;padding:25px;position:relative}.plan.featured{border-color:var(--blue);background:linear-gradient(160deg,rgba(24,72,116,.47),#101722 52%);box-shadow:0 0 40px rgba(39,134,214,.11)}.badge{position:absolute;right:16px;top:16px;border-radius:999px;background:var(--blue);color:#03111f;padding:5px 9px;font-size:.61rem;font-weight:950;letter-spacing:.08em}.plan h3{font-size:1.3rem;margin:0 0 4px}.plan-sub{color:var(--muted);font-size:.82rem}.plan-price{font-size:1.8rem;font-weight:900;letter-spacing:-.04em;margin:23px 0 4px}.plan-price small{font-size:.72rem;letter-spacing:0;color:var(--muted);font-weight:600}.plan ul{list-style:none;padding:0;margin:20px 0 24px;display:grid;gap:11px;color:#c5cfde;font-size:.82rem}.plan li:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:9px}.plan .btn{width:100%}.plan-foot{color:#8190a5;font-size:.74rem;text-align:center;margin-top:23px}
+    .faq-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:60px}.faq-list{border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;padding:21px 0;background:none;border:0;display:flex;justify-content:space-between;gap:15px;text-align:left;font-weight:800;cursor:pointer}.faq-q span:last-child{color:var(--cyan);font-size:1.2rem}.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s}.faq-a>div{overflow:hidden}.faq-a p{margin:0;color:var(--muted);font-size:.86rem;padding:0 40px 20px 0}.faq-item.open .faq-a{grid-template-rows:1fr}
+    .contact{background:radial-gradient(ellipse at 18% 10%,rgba(42,143,239,.15),transparent 43%),#0b1019;border-top:1px solid var(--line)}.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:62px;align-items:start}.contact h2{font-size:clamp(2.4rem,5vw,4.5rem);line-height:.98;letter-spacing:-.065em;margin:17px 0}.contact-copy p{color:var(--muted);max-width:480px}.contact-points{display:grid;gap:12px;margin-top:28px;color:#c5d1e1;font-size:.88rem}.contact-points span:before{content:"↗";color:var(--cyan);margin-right:10px}.lead-form{padding:25px;border:1px solid var(--line);border-radius:22px;background:rgba(16,22,34,.9);box-shadow:0 24px 70px rgba(0,0,0,.2)}.lead-form h3{font-size:1.3rem;margin:0 0 4px}.lead-form>p{color:var(--muted);font-size:.79rem;margin:0 0 18px}.field{display:grid;gap:7px;margin:13px 0}.field label{font-size:.74rem;color:#c5d1e1;font-weight:700}.field input,.field textarea,.field select{width:100%;border:1px solid rgba(173,198,233,.17);border-radius:11px;background:#0a101a;color:var(--ink);padding:12px 13px;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(56,166,255,.1)}.field textarea{resize:vertical;min-height:95px}.lead-form .btn{width:100%;margin-top:6px}.form-note{font-size:.68rem;color:#8190a5;margin-top:12px}.form-status{display:none;border:1px solid rgba(186,255,102,.25);color:#d8ffae;background:rgba(186,255,102,.06);padding:11px;border-radius:10px;font-size:.78rem;margin-top:12px}.form-status.show{display:block}
+    footer{padding:26px 0;color:#8492a7;font-size:.74rem}footer .foot-row{display:flex;justify-content:space-between;align-items:center;gap:18px;border-top:1px solid var(--line);padding-top:23px}footer .brand{color:var(--ink);font-size:.85rem}footer a:hover{color:var(--cyan)}.footer-links{display:flex;gap:19px}
+    @media(max-width:950px){.hero-grid{grid-template-columns:1fr .86fr}.hero h1{font-size:clamp(3rem,8vw,5rem)}.method-grid{grid-template-columns:repeat(3,1fr)}.services-grid{grid-template-columns:repeat(2,1fr)}.proof-row{grid-template-columns:1fr 1fr}.proof-label{grid-column:1/-1}.proof-item:nth-child(2){border-left:0;padding-left:0}.problem-grid{gap:32px}.portfolio-track{grid-auto-columns:calc((100% - 18px)/2)}}
+    @media(max-width:700px){.wrap{width:min(var(--max),calc(100% - 32px))}.topbar{height:68px}.menu-toggle{display:inline-flex}.nav-cta{display:none}.nav-links{display:none;position:absolute;left:0;right:0;top:67px;padding:16px 22px 22px;background:#0b1019;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 3px;border-bottom:1px solid var(--line)}.hero{padding:58px 0 52px;min-height:unset}.hero-grid{grid-template-columns:1fr;gap:0}.hero h1{font-size:clamp(3.35rem,15vw,5.3rem)}.hero-copy>p{font-size:1rem}.hero-art{min-height:335px;margin:-3px 0 0}.drone-svg{width:min(490px,112%)}.orb{width:min(330px,88%)}.tag-one{right:0;top:8%}.tag-two{left:0;bottom:8%}.hero-note{display:none}.section{padding:76px 0}.problem-grid,.faq-layout,.contact-grid{grid-template-columns:1fr;gap:30px}.pain-list{grid-template-columns:1fr}.method-grid{grid-template-columns:1fr 1fr}.step{min-height:180px}.portfolio-head{align-items:start;flex-direction:column}.portfolio-track{grid-auto-columns:86%}.cases-grid,.plan-grid{grid-template-columns:1fr}.plan.featured{order:-1}.services-grid{grid-template-columns:1fr 1fr;gap:10px}.service{padding:17px;min-height:210px}.proof-row{gap:15px}.proof-item{padding-left:14px;font-size:.74rem}.proof-item b{font-size:.9rem}footer .foot-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}}
+    @media(max-width:390px){.services-grid,.method-grid{grid-template-columns:1fr}.hero-actions .btn{width:100%}.proof-row{grid-template-columns:1fr 1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+    /* Abertura cinematográfica com drone CSS em perspectiva 3D. */
+    .intro-overlay{position:fixed;inset:0;z-index:1000;overflow:hidden;background:#050912;color:#edf8ff;opacity:1;visibility:visible;transition:opacity .9s ease,visibility .9s ease}.intro-overlay.is-leaving{opacity:0;visibility:hidden;pointer-events:none}.intro-sky{position:absolute;inset:0;background:radial-gradient(ellipse at 52% 67%,rgba(18,108,186,.32),transparent 42%),radial-gradient(ellipse at 50% 100%,rgba(37,157,245,.18),transparent 34%),linear-gradient(180deg,#070b14 0%,#0b1728 60%,#10253a 100%)}.intro-sky:before{content:"";position:absolute;inset:0;background-image:radial-gradient(1px 1px at 13% 21%,#c6e9ff 90%,transparent),radial-gradient(1px 1px at 25% 39%,#9dd8ff 90%,transparent),radial-gradient(2px 2px at 48% 19%,#e2f5ff 90%,transparent),radial-gradient(1px 1px at 72% 26%,#9dd8ff 90%,transparent),radial-gradient(1px 1px at 87% 15%,#c6e9ff 90%,transparent),radial-gradient(1px 1px at 92% 46%,#9dd8ff 90%,transparent);opacity:.57}.intro-cloud{position:absolute;width:78vw;height:30vh;left:12%;top:51%;border-radius:50%;background:rgba(71,142,196,.13);filter:blur(48px);animation:cloud-drift 5.4s ease-in-out both}.intro-horizon{position:absolute;left:-10%;right:-10%;bottom:-2px;height:24vh;background:linear-gradient(180deg,rgba(9,20,33,.05),rgba(4,9,16,.9)),linear-gradient(90deg,#0c1926,#14283a 47%,#07111d);clip-path:polygon(0 45%,8% 39%,15% 54%,23% 36%,31% 46%,39% 24%,46% 44%,53% 33%,62% 49%,71% 28%,79% 45%,87% 35%,94% 50%,100% 40%,100% 100%,0 100%);opacity:.82}.intro-horizon:after{content:"";position:absolute;inset:36% 0 0;background:repeating-linear-gradient(90deg,transparent 0 5.5%,rgba(77,163,222,.13) 5.55% 5.7%,transparent 5.8% 7.9%);mask-image:linear-gradient(transparent,#000)}.intro-light{position:absolute;left:50%;top:64%;width:38vw;height:2px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(85,203,255,.8),transparent);box-shadow:0 0 45px 12px rgba(40,159,244,.25)}.intro-track{position:absolute;inset:0;perspective:1100px;perspective-origin:50% 50%;display:grid;place-items:center}.drone-flight{position:absolute;width:min(390px,78vw);height:270px;transform-style:preserve-3d;animation:drone-sweep 5.4s cubic-bezier(.14,.64,.18,1) both;will-change:transform,opacity}.drone3d{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(17deg) rotateY(-10deg) rotateZ(-7deg);filter:drop-shadow(0 24px 34px rgba(0,0,0,.55))}.drone3d .arm{position:absolute;left:50%;top:50%;width:42%;height:16px;margin-top:-8px;transform-origin:0 50%;border-radius:10px;background:linear-gradient(180deg,#536173 0%,#171e29 28%,#080c12 72%,#273647 100%);border:1px solid #263b50;box-shadow:0 4px 9px #02050a,0 0 12px rgba(38,145,224,.2)}.drone3d .arm:after{content:"";position:absolute;left:8%;right:6%;top:4px;height:2px;background:linear-gradient(90deg,transparent,#42b9f1,transparent);opacity:.76}.arm-a{transform:rotate(-36deg) translateZ(1px)}.arm-b{transform:rotate(36deg) translateZ(1px)}.arm-c{transform:rotate(144deg) translateZ(-2px)}.arm-d{transform:rotate(216deg) translateZ(-2px)}.drone-body{position:absolute;left:50%;top:50%;width:154px;height:93px;transform:translate(-50%,-50%) translateZ(16px);border-radius:35% 35% 31% 31%;background:linear-gradient(155deg,#3c4858 0%,#151c27 26%,#070b11 64%,#222f3e 100%);border:1px solid #526174;box-shadow:inset 0 5px 9px rgba(255,255,255,.1),inset 0 -8px 15px #03060a,0 14px 21px rgba(0,0,0,.58)}.drone-body:before{content:"";position:absolute;left:16%;right:16%;top:12px;height:29px;border-radius:50% 50% 35% 35%;background:linear-gradient(150deg,#243b50,#0b121b 72%);border:1px solid #354d63;box-shadow:inset 0 2px 5px #05080e}.drone-body:after{content:"DEX";position:absolute;left:0;right:0;top:51px;text-align:center;color:#75dafa;font-size:8px;letter-spacing:3px;font-weight:900;text-shadow:0 0 10px #128ce2}.drone-light{position:absolute;width:9px;height:9px;top:38px;border-radius:50%;background:#5fe7ff;box-shadow:0 0 12px 4px rgba(55,195,255,.75)}.drone-light.left{left:13px}.drone-light.right{right:13px}.camera-gimbal{position:absolute;left:50%;top:calc(50% + 42px);width:52px;height:37px;transform:translateX(-50%) translateZ(8px);border-radius:8px 8px 17px 17px;background:linear-gradient(100deg,#080b10,#263544 48%,#080b10);border:1px solid #52677c;box-shadow:0 9px 12px #020407}.camera-gimbal:before{content:"";position:absolute;left:50%;top:8px;width:22px;height:22px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 38% 36%,#b5edff 0 5%,#2d9be0 17%,#111b29 48%,#03070b 70%);border:2px solid #6bb7dc;box-shadow:0 0 13px rgba(29,159,239,.65)}.rotor{position:absolute;width:82px;height:82px;border-radius:50%;border:1px solid rgba(104,187,241,.45);background:radial-gradient(circle,rgba(28,74,111,.55),rgba(9,15,23,.2) 65%,transparent 68%);transform:translateZ(8px)}.rotor:before,.rotor:after{content:"";position:absolute;left:50%;top:50%;width:80px;height:5px;margin:-2.5px 0 0 -40px;border-radius:100%;background:linear-gradient(90deg,transparent,#a9dfff 18%,#e0f6ff 48%,#61bbf1 78%,transparent);box-shadow:0 0 10px rgba(102,195,246,.56);animation:rotor-spin .12s linear infinite}.rotor:after{transform:rotate(90deg)}.rotor:before{transform:rotate(0)}.rotor:after{animation-delay:-.06s}.rotor-a{left:5%;top:4%}.rotor-b{right:5%;top:4%}.rotor-c{left:5%;bottom:4%}.rotor-d{right:5%;bottom:4%}.intro-brand{position:absolute;z-index:4;left:50%;top:45%;width:min(580px,90vw);transform:translate(-50%,-50%) scale(.76);text-align:center;opacity:0;animation:brand-appear 5.4s ease both;pointer-events:none}.intro-brand .brand-name{font-size:clamp(2.1rem,7vw,4.7rem);font-weight:950;letter-spacing:.16em;color:#f3f8ff;text-shadow:0 0 28px rgba(62,170,246,.25)}.intro-brand .brand-name span{color:var(--cyan)}.intro-brand p{margin:10px 0;color:#afd5f1;font-size:.77rem;letter-spacing:.25em;text-transform:uppercase}.intro-caption{position:absolute;z-index:5;left:50%;bottom:9%;width:min(360px,82vw);transform:translateX(-50%);text-align:center;color:#b8cce0;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}.intro-progress{height:2px;margin-top:13px;background:rgba(156,204,241,.2);overflow:hidden}.intro-progress:after{content:"";display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));transform:scaleX(0);transform-origin:left;animation:progress-fill 5.2s linear both}.intro-skip{position:absolute;right:clamp(18px,4vw,48px);top:clamp(18px,4vw,38px);z-index:6;border:1px solid rgba(175,218,249,.32);border-radius:999px;padding:10px 15px;background:rgba(7,13,21,.52);color:#e0efff;font-size:.73rem;cursor:pointer;backdrop-filter:blur(9px)}.intro-skip:hover{border-color:var(--cyan);color:var(--cyan)}
+    .hero-drone-stage{position:relative;z-index:2;width:min(570px,108%);height:390px;display:grid;place-items:center;perspective:1100px;transform-style:preserve-3d}.hero-drone-hover{position:relative;width:100%;height:100%;display:grid;place-items:center;transform-style:preserve-3d;animation:drone-hover 4s ease-in-out infinite}.hero-drone-rotator{position:relative;left:-12px;width:min(500px,108%);transform-style:preserve-3d;transform:perspective(1100px) rotateX(var(--tilt-x,4deg)) rotateY(var(--tilt-y,-11deg)) rotateZ(-2deg);transition:transform .22s cubic-bezier(.2,.7,.2,1);will-change:transform}.hero-drone-image{display:block;width:100%;height:auto;aspect-ratio:1024/683;object-fit:cover;border:1px solid rgba(101,190,246,.28);border-radius:20px;box-shadow:0 24px 70px rgba(0,0,0,.46),0 0 42px rgba(34,143,232,.15);user-select:none;-webkit-user-drag:none;pointer-events:none}.hero-drone-stage:after{content:"";position:absolute;left:23%;right:23%;bottom:10%;height:20px;border-radius:50%;background:rgba(25,137,231,.23);filter:blur(18px);animation:drone-hover 4s ease-in-out infinite reverse;pointer-events:none}.consent-field label{display:flex;align-items:flex-start;gap:10px;color:#b8c6d8;font-weight:500;line-height:1.45}.consent-field input[type=checkbox]{width:17px;height:17px;flex:0 0 auto;margin:2px 0 0;accent-color:var(--blue)}
+    @keyframes drone-sweep{0%{opacity:0;transform:translate3d(-46vw,27vh,-720px) rotateZ(-16deg) scale(.34)}12%{opacity:1}38%{transform:translate3d(-12vw,7vh,-60px) rotateZ(-7deg) scale(.78)}58%{transform:translate3d(0,1vh,90px) rotateZ(2deg) scale(1.08)}78%{transform:translate3d(16vw,-7vh,150px) rotateZ(8deg) scale(1.12)}100%{opacity:0;transform:translate3d(49vw,-31vh,560px) rotateZ(17deg) scale(1.55)}}@keyframes rotor-spin{to{transform:rotate(360deg)}}@keyframes cloud-drift{0%{transform:translateX(-12vw) scale(.7);opacity:0}30%{opacity:.9}100%{transform:translateX(16vw) scale(1.3);opacity:.2}}@keyframes brand-appear{0%,42%{opacity:0;transform:translate(-50%,-50%) scale(.76);filter:blur(7px)}58%,83%{opacity:1;transform:translate(-50%,-50%) scale(1);filter:blur(0)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.07);filter:blur(3px)}}@keyframes progress-fill{to{transform:scaleX(1)}}@keyframes drone-hover{0%,100%{translate:0 7px}50%{translate:0 -10px}}
+    @media(max-width:700px){.drone-flight{width:min(330px,82vw);height:230px}.hero-drone-stage{width:112%;height:300px}.hero-drone-rotator{left:0;width:min(390px,100%)}.rotor{width:68px;height:68px}.rotor:before,.rotor:after{width:68px;margin-left:-34px}.drone-body{width:136px;height:82px}.camera-gimbal{top:calc(50% + 37px)}.intro-caption{bottom:7%}.intro-brand{top:43%}.intro-horizon{height:20vh}}
+    @media(prefers-reduced-motion:reduce){.intro-overlay{display:none!important}.drone-flight,.hero-drone-rotator,.hero-drone-hover,.intro-brand,.intro-cloud,.intro-progress:after,.rotor:before,.rotor:after{animation:none!important}}
+  </style>
+</head>
+<body>
+  <section class="intro-overlay" id="flight-intro" aria-label="Abertura animada da DEX STUDIOS">
+    <div class="intro-sky"></div><div class="intro-cloud"></div><div class="intro-light"></div><div class="intro-horizon"></div>
+    <button class="intro-skip" id="intro-skip" type="button">Pular introdução <span aria-hidden="true">↗</span></button>
+    <div class="intro-track" aria-hidden="true">
+      <div class="drone-flight"><div class="drone3d">
+        <span class="arm arm-a"></span><span class="arm arm-b"></span><span class="arm arm-c"></span><span class="arm arm-d"></span>
+        <span class="rotor rotor-a"></span><span class="rotor rotor-b"></span><span class="rotor rotor-c"></span><span class="rotor rotor-d"></span>
+        <div class="drone-body"><i class="drone-light left"></i><i class="drone-light right"></i></div><div class="camera-gimbal"></div>
+      </div></div>
+    </div>
+    <div class="intro-brand" aria-hidden="true"><div class="brand-name">DEX <span>STUDIOS</span></div><p>Páginas claras. Mais oportunidades para sua marca.</p></div>
+    <div class="intro-caption">Criando novas oportunidades online<div class="intro-progress"></div></div>
+  </section>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="DEX STUDIOS, início"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17.5 12 4l8 13.5H4Z" stroke="currentColor" stroke-width="1.7"/><path d="M8 17.5 12 11l4 6.5" stroke="currentColor" stroke-width="1.7"/></svg></span>DEX <span class="blue">STUDIOS</span></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#servicos">O que entregamos</a><a href="#metodo">Como funciona</a><a href="#portfolio">Exemplos</a><a href="#planos">Planos</a><a href="#duvidas">Dúvidas</a>
+      </div>
+      <a class="nav-cta" href="#contato">Falar com a DEX <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">LANDING PAGES PARA NEGÓCIOS</div>
+          <h1>Sua empresa merece <span>mais conversas.</span></h1>
+          <p>Criamos landing pages claras e profissionais para apresentar seu negócio, destacar seus diferenciais e facilitar o contato com novos clientes.</p>
+          <div class="hero-actions"><a class="btn" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#portfolio">Ver exemplos <span aria-hidden="true">↓</span></a></div>
+          <div class="region"><i></i> Atendimento online para empresas de qualquer cidade</div>
+        </div>
+        <div class="hero-art" aria-label="Modelo tridimensional de drone preto com iluminação azul, em rotação contínua de 360 graus">
+          <div class="orb"></div>
+          <div class="float-tag tag-one"><strong>Landing page sob medida</strong>Conteúdo claro para seu público</div>
+          <div class="float-tag tag-two"><strong>Do briefing à publicação</strong>Uma página pronta para apresentar seu negócio</div>
+          <div class="hero-drone-stage" data-tilt-stage>
+            <div class="hero-drone-hover"><div class="hero-drone-rotator" data-tilt-card>
+              <!-- TROQUE este src pelo link da imagem do seu drone. A imagem anexada está em assets/drone-hero.png. -->
+<!-- DRONE EM CÓDIGO PURO (Sem precisar de imagem!) -->
+<svg id="meudrone" class="hero-drone-image" viewBox="0 0 800 600" width="100%" height="auto" style="max-width: 650px; display: block; margin: auto;">
+  <defs>
+    <!-- Brilhos e Efeitos Especiais -->
+    <radialGradient id="luzAzul" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#00d8ff" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#0066ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#001133" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="brilhoPropela" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d8ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00d8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0d12"/>
+      <stop offset="50%" stop-color="#242936"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </linearGradient>
+  </defs>
+
+  <!-- FEIXE DE LUZ AZUL (VOLUMÉTRICO) -->
+  <polygon points="360,250 440,250 580,600 220,600" fill="url(#luzAzul)" opacity="0.85" style="mix-blend-mode: screen;" />
+
+  <!-- ESTRUTURAS / BRAÇOS DO DRONE -->
+  <path d="M 120,130 L 260,195 M 680,130 L 540,195" stroke="#12161f" stroke-width="24" stroke-linecap="round" />
+  <path d="M 120,130 L 260,195 M 680,130 L 540,195" stroke="#00d8ff" stroke-width="2" stroke-dasharray="8,4" />
+  
+  <path d="M 230,130 L 280,195 M 570,130 L 520,195" stroke="#0e1014" stroke-width="16" stroke-linecap="round" />
+  <path d="M 90,140 L 90,240" stroke="#0e1014" stroke-width="8" stroke-linecap="round" />
+  <path d="M 710,140 L 710,240" stroke="#0e1014" stroke-width="8" stroke-linecap="round" />
+
+  <!-- MOTORES E LEDS DAS EXTREMIDADES (Esquerda) -->
+  <g transform="translate(120, 130)">
+    <rect x="-24" y="-35" width="48" height="60" rx="6" fill="url(#metal)" stroke="#00d8ff" stroke-width="2" />
+    <ellipse cx="0" cy="-35" rx="20" ry="6" fill="#00d8ff" />
+    <!-- Brilho do LED da Hélice -->
+    <ellipse cx="0" cy="-45" rx="100" ry="12" fill="url(#brilhoPropela)" />
+    <!-- Propelas em movimento -->
+    <ellipse cx="0" cy="-45" rx="120" ry="8" fill="rgba(255,255,255,0.15)" stroke="rgba(0, 216, 255, 0.4)" stroke-width="1" />
+    <!-- Pé de Apoio -->
+    <path d="M 0,25 L -10,80" stroke="#0c0d12" stroke-width="8" stroke-linecap="round" />
+    <circle cx="-10" cy="80" r="6" fill="#00d8ff" />
+  </g>
+
+  <!-- MOTORES E LEDS DAS EXTREMIDADES (Esquerda Trás) -->
+  <g transform="translate(250, 120)">
+    <rect x="-18" y="-30" width="36" height="50" rx="4" fill="url(#metal)" stroke="#00d8ff" stroke-width="1" />
+    <ellipse cx="0" cy="-30" rx="15" ry="4" fill="#00d8ff" opacity="0.8" />
+    <ellipse cx="0" cy="-38" rx="85" ry="5" fill="url(#brilhoPropela)" />
+    <ellipse cx="0" cy="-38" rx="100" ry="6" fill="rgba(255,255,255,0.12)" stroke="rgba(0, 216, 255, 0.3)" stroke-width="1" />
+  </g>
+
+  <!-- MOTORES E LEDS DAS EXTREMIDADES (Direita Trás) -->
+  <g transform="translate(550, 120)">
+    <rect x="-18" y="-30" width="36" height="50" rx="4" fill="url(#metal)" stroke="#00d8ff" stroke-width="1" />
+    <ellipse cx="0" cy="-30" rx="15" ry="4" fill="#00d8ff" opacity="0.8" />
+    <ellipse cx="0" cy="-38" rx="85" ry="5" fill="url(#brilhoPropela)" />
+    <ellipse cx="0" cy="-38" rx="100" ry="6" fill="rgba(255,255,255,0.12)" stroke="rgba(0, 216, 255, 0.3)" stroke-width="1" />
+  </g>
+
+  <!-- MOTORES E LEDS DAS EXTREMIDADES (Direita) -->
+  <g transform="translate(680, 130)">
+    <rect x="-24" y="-35" width="48" height="60" rx="6" fill="url(#metal)" stroke="#00d8ff" stroke-width="2" />
+    <ellipse cx="0" cy="-35" rx="20" ry="6" fill="#00d8ff" />
+    <ellipse cx="0" cy="-45" rx="100" ry="12" fill="url(#brilhoPropela)" />
+    <ellipse cx="0" cy="-45" rx="120" ry="8" fill="rgba(255,255,255,0.15)" stroke="rgba(0, 216, 255, 0.4)" stroke-width="1" />
+    <!-- Pé de Apoio -->
+    <path d="M 0,25 L 10,80" stroke="#0c0d12" stroke-width="8" stroke-linecap="round" />
+    <circle cx="10" cy="80" r="6" fill="#00d8ff" />
+  </g>
+
+  <!-- CORPO PRINCIPAL DO DRONE (Design Aerodinâmico Circular) -->
+  <g transform="translate(400, 195)">
+    <!-- Base de Fibra de Carbono e Metal -->
+    <ellipse cx="0" cy="12" rx="185" ry="52" fill="#0e1118" stroke="#1c2333" stroke-width="4" />
+    <ellipse cx="0" cy="0" rx="180" ry="48" fill="url(#metal)" stroke="#2b354a" stroke-width="2" />
+    
+    <!-- Linhas Esportivas Azuis (Frisos de Led) -->
+    <ellipse cx="0" cy="18" rx="150" ry="32" fill="none" stroke="#00d8ff" stroke-width="4" opacity="0.9" />
+    <ellipse cx="0" cy="-2" rx="130" ry="18" fill="none" stroke="#0066ff" stroke-width="2" opacity="0.6" />
+    <path d="M -110,12 Q 0,28 110,12" fill="none" stroke="#00d8ff" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Cúpula Superior Futurista -->
+    <path d="M -70,-15 C -60,-45 60,-45 70,-15 C 50,-8 -50,-8 -70,-15 Z" fill="#05070a" stroke="#0066ff" stroke-width="2" />
+    <ellipse cx="0" cy="-14" rx="45" ry="15" fill="#141923" />
+    <ellipse cx="0" cy="-18" rx="25" ry="8" fill="#00d8ff" opacity="0.8" />
+
+    <!-- Câmera Gimbal Estilo Sci-Fi -->
+    <g transform="translate(0, 48)">
+      <!-- Suporte do Gimbal -->
+      <rect x="-16" y="0" width="32" height="24" rx="4" fill="#0a0c10" stroke="#1c2333" stroke-width="2" />
+      <path d="M -8,22 Q 0,38 8,22" fill="none" stroke="#00d8ff" stroke-width="3" />
+      <!-- Globo / Lente da Câmera -->
+      <circle cx="0" cy="30" r="24" fill="url(#metal)" stroke="#1a202c" stroke-width="2" />
+      <!-- Lente de Vidro -->
+      <circle cx="0" cy="30" r="15" fill="#020305" stroke="#00d8ff" stroke-width="3" />
+      <circle cx="4" cy="26" r="6" fill="#00f0ff" opacity="0.9" />
+      <circle cx="-3" cy="33" r="3" fill="#ffffff" opacity="0.5" />
+    </g>
+  </g>
+</svg>
+                        </div></div>
+          </div>
+          <div class="hero-note">DRONE COM EFEITO 3D · ACOMPANHA O CURSOR</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof" aria-label="Atendimento e especialidades">
+      <div class="wrap proof-row"><div class="proof-label">LANDING PAGES PARA</div><div class="proof-item"><b>Clínicas</b>Agendamentos e novos pacientes</div><div class="proof-item"><b>Profissionais</b>Apresentação de serviços</div><div class="proof-item"><b>Restaurantes e empresas</b>Divulgação e pedidos</div></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap problem-grid">
+        <div class="problem-intro"><div class="eyebrow">SUA PRESENÇA ONLINE</div><h2>Seu cliente precisa entender por que escolher você.</h2><p>Uma landing page reúne em um só lugar o que você oferece, para quem é, seus diferenciais e o próximo passo. Ela ajuda o visitante a encontrar informações e entrar em contato com menos atrito.</p><a class="inline-cta" href="#contato">Conte o que sua marca precisa <span>↗</span></a></div>
+        <div class="pain-list"><div class="pain"><span>01</span>Explicar seus serviços com clareza</div><div class="pain"><span>02</span>Organizar informações em uma página</div><div class="pain"><span>03</span>Mostrar seus diferenciais com destaque</div><div class="pain"><span>04</span>Facilitar o contato pelo WhatsApp</div><div class="pain"><span>05</span>Transmitir confiança desde a primeira visita</div><div class="pain"><span>06</span>Orientar o visitante para uma ação</div><div class="pain"><span>07</span>Ter uma página adaptada ao celular</div><div class="pain"><span>08</span>Divulgar uma oferta ou serviço específico</div></div>
+      </div>
+    </section>
+
+    <section class="section method" id="metodo">
+      <div class="wrap"><div class="section-head"><div class="eyebrow">NOSSO PROCESSO</div><h2>Uma página pensada do objetivo à publicação.</h2><p class="muted">Cada landing page começa com uma conversa sobre seu negócio e o resultado esperado. A estrutura, o texto e o visual são definidos para tornar a informação simples de entender e a ação fácil de encontrar.</p></div>
+        <div class="method-grid"><article class="step"><div class="step-num">ETAPA 01</div><h3>Briefing</h3><p>Entendemos seu negócio, público, oferta e objetivo.</p></article><article class="step"><div class="step-num">ETAPA 02</div><h3>Estrutura e texto</h3><p>Organizamos as informações e escrevemos a página.</p></article><article class="step"><div class="step-num">ETAPA 03</div><h3>Design</h3><p>Criamos um visual alinhado à identidade da sua marca.</p></article><article class="step"><div class="step-num">ETAPA 04</div><h3>Desenvolvimento</h3><p>Montamos a página para computador e celular.</p></article><article class="step"><div class="step-num">ETAPA 05</div><h3>Revisão e publicação</h3><p>Você revisa; após aprovação, publicamos conforme o escopo.</p></article></div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="wrap"><div class="section-head"><div class="eyebrow">O QUE SUA PÁGINA PODE TER</div><h2>Tudo o que sua landing page precisa para apresentar seu negócio.</h2><p class="muted">Cada projeto é definido conforme seu objetivo, conteúdo disponível e recursos necessários.</p></div>
+        <div class="services-grid">
+          <article class="service"><div class="service-icon">⌂</div><h3>Apresentação do negócio</h3><p>Uma página clara sobre sua empresa, serviço, equipe e diferenciais.</p><a href="#contato">Quero apresentar meu negócio ↗</a></article>
+          <article class="service"><div class="service-icon">✎</div><h3>Texto estratégico</h3><p>Conteúdo organizado para explicar sua oferta e orientar o visitante.</p><a href="#contato">Quero conversar sobre o texto ↗</a></article>
+          <article class="service"><div class="service-icon">✳</div><h3>Design personalizado</h3><p>Visual alinhado à identidade da sua marca e ao perfil do seu público.</p><a href="#contato">Quero falar sobre o design ↗</a></article>
+          <article class="service"><div class="service-icon">▣</div><h3>Versão para celular</h3><p>Layout adaptado para uma boa leitura em diferentes tamanhos de tela.</p><a href="#contato">Quero uma página responsiva ↗</a></article>
+          <article class="service"><div class="service-icon">↗</div><h3>Botões de contato</h3><p>Links para WhatsApp, agendamento, cardápio ou outros canais do negócio.</p><a href="#contato">Quero facilitar o contato ↗</a></article>
+          <article class="service"><div class="service-icon">▤</div><h3>Seções sob medida</h3><p>Serviços, depoimentos, perguntas frequentes, localização e mais.</p><a href="#contato">Definir as seções ↗</a></article>
+          <article class="service"><div class="service-icon">⌘</div><h3>Publicação da página</h3><p>Orientação para colocar a landing page no ar com domínio e hospedagem.</p><a href="#contato">Conversar sobre publicação ↗</a></article>
+          <article class="service"><div class="service-icon">＋</div><h3>Integrações combinadas</h3><p>Recursos e ferramentas definidos de acordo com a necessidade do projeto.</p><a href="#contato">Descrever minha necessidade ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="wrap"><div class="portfolio-head section-head"><div><div class="eyebrow">EXEMPLOS DE APLICAÇÃO</div><h2>Uma página para cada tipo de negócio.</h2><p class="muted">Os cartões abaixo são conceitos demonstrativos para ilustrar possíveis projetos.</p></div><div class="slider-controls"><button class="round-btn" data-slide="-1" aria-label="Projetos anteriores">←</button><button class="round-btn" data-slide="1" aria-label="Próximos projetos">→</button></div></div>
+        <div class="portfolio-track" id="portfolio-track" tabindex="0" aria-label="Projetos demonstrativos">
+          <article class="work-card"><div class="work-visual"><span class="visual-type">RESTAURANTES</span><div class="visual-orb">✳</div><div class="work-overlay">Cardápio, diferenciais e pedidos</div></div><div class="work-info"><h3>Landing page para restaurante</h3><p>Apresentação do cardápio, localização e botão para pedir ou reservar.</p><span class="demo-label">Conceito demonstrativo · não é case real</span></div></article>
+          <article class="work-card"><div class="work-visual" style="background:radial-gradient(circle at 55% 40%,rgba(67,199,214,.28),transparent 31%),linear-gradient(145deg,#18383f,#10151f 65%)"><span class="visual-type">CLÍNICAS</span><div class="visual-orb">◌</div><div class="work-overlay">Especialidades e agendamento</div></div><div class="work-info"><h3>Landing page para clínica</h3><p>Especialidades, equipe, dúvidas frequentes e contato para agendamento.</p><span class="demo-label">Conceito demonstrativo · não é case real</span></div></article>
+          <article class="work-card"><div class="work-visual" style="background:radial-gradient(circle at 55% 40%,rgba(126,107,255,.27),transparent 31%),linear-gradient(145deg,#282748,#10151f 65%)"><span class="visual-type">PROFISSIONAIS</span><div class="visual-orb">✦</div><div class="work-overlay">Serviços, diferenciais e contato</div></div><div class="work-info"><h3>Landing page profissional</h3><p>Apresentação do serviço, benefícios, credenciais e chamada para conversar.</p><span class="demo-label">Conceito demonstrativo · não é case real</span></div></article>
+          <article class="work-card"><div class="work-visual" style="background:radial-gradient(circle at 55% 40%,rgba(255,172,78,.25),transparent 31%),linear-gradient(145deg,#403025,#10151f 65%)"><span class="visual-type">CAMPANHAS</span><div class="visual-orb">⌂</div><div class="work-overlay">Oferta, benefícios e conversão</div></div><div class="work-info"><h3>Landing page de campanha</h3><p>Uma página focada em divulgar um serviço, produto ou oferta específica.</p><span class="demo-label">Conceito demonstrativo · não é case real</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap"><div class="section-head"><div class="eyebrow">PARA QUEM</div><h2>Landing pages para diferentes negócios.</h2><p class="muted">A estrutura muda conforme o que cada público precisa saber para dar o próximo passo.</p></div>
+        <div class="cases-grid"><article class="case"><div class="case-kicker">Clínicas</div><h3>Facilitar o agendamento</h3><p>Apresentar especialidades, profissionais, horários e caminhos para marcar uma consulta.</p><div class="placeholder">Estrutura ajustada ao perfil da clínica e às informações fornecidas.</div></article><article class="case"><div class="case-kicker">Profissionais</div><h3>Apresentar serviços e credenciais</h3><p>Explicar o que você faz, para quem e como iniciar uma conversa ou solicitar atendimento.</p><div class="placeholder">Estrutura ajustada ao serviço e ao público que você atende.</div></article><article class="case"><div class="case-kicker">Restaurantes</div><h3>Mostrar o cardápio e receber pedidos</h3><p>Destacar pratos, localização, horários e links para pedido ou reserva.</p><div class="placeholder">Estrutura definida conforme os canais e materiais do restaurante.</div></article></div>
+      </div>
+    </section>
+
+    <section class="section plans" id="planos">
+      <div class="wrap"><div class="plans-intro"><div class="eyebrow">PLANOS E PROJETOS</div><h2>Uma landing page sob medida para seu objetivo.</h2><p class="muted">O investimento depende da estrutura, do conteúdo, das integrações e dos recursos definidos para sua página.</p></div>
+        <div class="plan-grid"><article class="plan"><h3>Essencial</h3><div class="plan-sub">Para apresentar um serviço</div><div class="plan-price">Sob proposta</div><ul><li>Briefing e definição do objetivo</li><li>Estrutura e texto da página</li><li>Design responsivo</li><li>Botão de contato</li></ul><a class="btn secondary" href="#contato">Pedir proposta</a></article><article class="plan featured"><span class="badge">MAIS FLEXÍVEL</span><h3>Completa</h3><div class="plan-sub">Para apresentar seu negócio por inteiro</div><div class="plan-price">Sob proposta</div><ul><li>Estrutura personalizada</li><li>Texto para as seções da página</li><li>Design responsivo</li><li>Seções adicionais e perguntas frequentes</li></ul><a class="btn" href="#contato">Pedir proposta</a></article><article class="plan"><h3>Personalizada</h3><div class="plan-sub">Para necessidades específicas</div><div class="plan-price">Sob proposta</div><ul><li>Recursos definidos para seu objetivo</li><li>Integrações conforme escopo</li><li>Orientação para publicação</li><li>Alinhamento e revisão</li></ul><a class="btn secondary" href="#contato">Pedir proposta</a></article></div>
+        <p class="plan-foot">A proposta informa o que está incluído, o que você precisa fornecer, os prazos, as revisões e eventuais custos de domínio, hospedagem ou ferramentas externas.</p>
+      </div>
+    </section>
+
+    <section class="section" id="duvidas">
+      <div class="wrap faq-layout"><div><div class="eyebrow">DÚVIDAS FREQUENTES</div><div class="section-head"><h2>Antes de começar.</h2><p class="muted">Entenda as etapas de criação e o que considerar antes de publicar sua página.</p></div><a class="inline-cta" href="#contato">Ainda tem dúvidas? Fale com a gente ↗</a></div>
+        <div class="faq-list">
+          <article class="faq-item"><button class="faq-q" aria-expanded="false"><span>Vocês atendem empresas de qualquer cidade?</span><span>＋</span></button><div class="faq-a"><div><p>Sim. O briefing, a aprovação e a entrega podem ser feitos online, então atendemos empresas de qualquer cidade. Se o projeto exigir alguma atividade presencial, isso será combinado na proposta.</p></div></div></article>
+          <article class="faq-item"><button class="faq-q" aria-expanded="false"><span>Como recebo um orçamento?</span><span>＋</span></button><div class="faq-a"><div><p>Você conta sobre o negócio e o objetivo da página. A DEX propõe a estrutura, o texto, o visual e os recursos; depois de alinhamento e aprovação, a página é desenvolvida, revisada e publicada conforme o escopo.</p></div></div></article>
+          <article class="faq-item"><button class="faq-q" aria-expanded="false"><span>Preciso enviar os textos e as imagens?</span><span>＋</span></button><div class="faq-a"><div><p>Envie as informações e os materiais que já tiver, como logotipo, fotos e detalhes dos serviços. A proposta define se a DEX também preparará os textos ou ajudará a organizar os materiais necessários.</p></div></div></article>
+          <article class="faq-item"><button class="faq-q" aria-expanded="false"><span>Preciso ter domínio e hospedagem?</span><span>＋</span></button><div class="faq-a"><div><p>Para publicar com um endereço próprio, você precisará de um domínio e de uma hospedagem ou plataforma. Podemos orientar essa configuração; custos de terceiros ficam descritos separadamente na proposta.</p></div></div></article>
+          <article class="faq-item"><button class="faq-q" aria-expanded="false"><span>Quanto tempo leva para ficar pronta?</span><span>＋</span></button><div class="faq-a"><div><p>O prazo depende da complexidade da página e do envio das informações e aprovações. Ele será combinado na proposta antes do início do projeto.</p></div></div></article>
+          <article class="faq-item"><button class="faq-q" aria-expanded="false"><span>Posso pedir alterações?</span><span>＋</span></button><div class="faq-a"><div><p>Sim. As etapas de revisão e a quantidade de ajustes incluídos serão definidas na proposta para que você possa aprovar a página antes da publicação.</p></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="wrap contact-grid"><div class="contact-copy"><div class="eyebrow">PRÓXIMO PASSO</div><h2>Vamos criar sua landing page?</h2><p>Conte qual é o seu negócio, o que você quer divulgar e qual ação espera do visitante. A DEX conversa com você e prepara uma proposta adequada ao projeto.</p><div class="contact-points"><span>Atendimento online em qualquer cidade</span><span>Páginas para clínicas, profissionais, restaurantes e empresas</span><span>Proposta com escopo e condições definidos</span></div><a class="inline-cta" data-whatsapp-contact href="https://wa.me/5586988872467?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DEX%20STUDIOS." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp · (86) 98887-2467 ↗</a></div>
+        <form class="lead-form" id="lead-form"><h3>Conte sobre seu negócio</h3><p>Preencha os dados para iniciar a conversa sobre sua landing page.</p>
+          <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" autocomplete="name" required placeholder="Como podemos chamar você?"></div>
+          <div class="field"><label for="whatsapp">WhatsApp</label><input id="whatsapp" name="whatsapp" autocomplete="tel" required placeholder="(DDD) 9 0000-0000"></div>
+          <div class="field"><label for="negocio">Tipo de negócio</label><select id="negocio" name="negocio" required><option value="">Selecione uma opção</option><option>Clínica ou consultório</option><option>Profissional autônomo</option><option>Restaurante ou gastronomia</option><option>Loja ou comércio</option><option>Outro negócio</option></select></div>
+          <div class="field"><label for="objetivo">Qual é o objetivo da página?</label><select id="objetivo" name="objetivo" required><option value="">Selecione uma opção</option><option>Receber contatos pelo WhatsApp</option><option>Agendar consultas ou atendimentos</option><option>Apresentar meus serviços</option><option>Divulgar um produto ou campanha</option><option>Mostrar cardápio e receber pedidos</option><option>Outro objetivo</option></select></div>
+          <div class="field"><label for="mensagem">Conte um pouco sobre o projeto</label><textarea id="mensagem" name="mensagem" placeholder="Seu negócio, público e o que espera da página..."></textarea></div>
+          <div class="field consent-field"><label><input type="checkbox" name="consentimento" required><span>Concordo em abrir o WhatsApp com os dados preenchidos para enviar minha solicitação à DEX STUDIOS.</span></label></div>
+          <button class="btn" type="submit">Preparar mensagem <span aria-hidden="true">↗</span></button>
+          <div class="form-status" id="form-status" role="status"></div>
+          <div class="form-note">O WhatsApp abrirá com uma mensagem preenchida. Confira os dados e toque em Enviar para compartilhá-los com a DEX.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap foot-row"><a class="brand" href="#inicio">DEX <span class="blue">STUDIOS</span></a><span>© <span id="year"></span> DEX STUDIOS · Landing pages para todo o Brasil</span><div class="footer-links"><a href="#servicos">Landing pages</a><a data-whatsapp-contact href="https://wa.me/5586988872467?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DEX%20STUDIOS." target="_blank" rel="noopener noreferrer">WhatsApp (86) 98887-2467</a><a href="#">Política de privacidade</a></div></div></footer>
+
+  <script>
+    const menuButton=document.querySelector('.menu-toggle');
+    const navLinks=document.querySelector('.nav-links');
+    menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}));
+    document.querySelectorAll('.faq-q').forEach(button=>button.addEventListener('click',()=>{const item=button.closest('.faq-item');const open=item.classList.toggle('open');button.setAttribute('aria-expanded',String(open));button.lastElementChild.textContent=open?'−':'＋'}));
+    const track=document.getElementById('portfolio-track');
+    document.querySelectorAll('[data-slide]').forEach(button=>button.addEventListener('click',()=>track.scrollBy({left:Number(button.dataset.slide)*track.clientWidth*.82,behavior:'smooth'})));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const DEX_WHATSAPP='5586988872467';
+    const whatsappUrl=message=>`https://wa.me/${DEX_WHATSAPP}?text=${encodeURIComponent(message)}`;
+    document.querySelectorAll('a[href="#contato"]').forEach(link=>{const topic=link.textContent.replace(/[↗↓]/g,'').trim();link.href=whatsappUrl(`Olá! Vim pelo site da DEX STUDIOS e quero conversar: ${topic}.`);link.target='_blank';link.rel='noopener noreferrer'});
+    document.querySelectorAll('[data-whatsapp-contact]').forEach(link=>{link.href=whatsappUrl('Olá! Vim pelo site da DEX STUDIOS e quero conversar sobre os serviços.')});
+    document.getElementById('lead-form').addEventListener('submit',event=>{event.preventDefault();const form=new FormData(event.currentTarget);const message=['Olá! Vim pelo site da DEX STUDIOS e gostaria de conversar sobre um projeto.','',`Nome: ${form.get('nome')}`,`Meu WhatsApp: ${form.get('whatsapp')}`,'Tipo de negócio: '+form.get('negocio'),'Objetivo: '+form.get('objetivo'),`Projeto: ${form.get('mensagem')||'Quero conversar sobre os detalhes.'}`].join('\n');window.location.href=whatsappUrl(message)});
+    const tiltStage=document.querySelector('[data-tilt-stage]');
+    const tiltCard=document.querySelector('[data-tilt-card]');
+    const supportsMouseTilt=window.matchMedia('(hover: hover) and (pointer: fine)').matches&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(tiltStage&&tiltCard&&supportsMouseTilt){
+      let tiltFrame=0;
+      tiltStage.addEventListener('pointermove',event=>{
+        const bounds=tiltStage.getBoundingClientRect();
+        const horizontal=(event.clientX-bounds.left)/bounds.width*2-1;
+        const vertical=(event.clientY-bounds.top)/bounds.height*2-1;
+        cancelAnimationFrame(tiltFrame);
+        tiltFrame=requestAnimationFrame(()=>{
+          tiltCard.style.setProperty('--tilt-x',`${(4-vertical*5).toFixed(2)}deg`);
+          tiltCard.style.setProperty('--tilt-y',`${(-11+horizontal*7).toFixed(2)}deg`);
+        });
+      });
+      tiltStage.addEventListener('pointerleave',()=>{
+        cancelAnimationFrame(tiltFrame);
+        tiltCard.style.setProperty('--tilt-x','4deg');
+        tiltCard.style.setProperty('--tilt-y','-11deg');
+      });
+    }
+    const intro=document.getElementById('flight-intro');
+    let introClosed=false;
+    const closeIntro=()=>{if(introClosed)return;introClosed=true;intro.classList.add('is-leaving');window.setTimeout(()=>intro.remove(),950)};
+    document.getElementById('intro-skip').addEventListener('click',closeIntro);
+    window.addEventListener('keydown',event=>{if(event.key==='Escape'&&!introClosed)closeIntro()});
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){closeIntro()}else{window.setTimeout(closeIntro,5400)}
+  </script>
+<script>
+    const drone = document.getElementById('meudrone');
+    if (drone) {
+        // Prepara a imagem para o movimento suave em 3D
+        drone.style.transition = "transform 0.1s ease-out";
+        drone.style.transformStyle = "preserve-3d";
+        
+        // Faz a imagem seguir o seu mouse
+        document.addEventListener("mousemove", (e) => {
+            let eixoX = (window.innerWidth / 2 - e.pageX) / 30;
+            let eixoY = (window.innerHeight / 2 - e.pageY) / 30;
+            drone.style.transform = `perspective(1000px) rotateY(${eixoX}deg) rotateX(${eixoY}deg)`;
+        });
+    }
+</script>
+</body>
+</html>
